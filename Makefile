@@ -21,7 +21,7 @@ RZIP_FILES = $(wildcard $(BIN_DIR)/rzip/assets*/assets*.bin)
 
 O_FILES    = $(foreach file,$(BIN_FILES) $(RZIP_FILES),$(BUILD_DIR)/$(file:.bin=.bin.o))
 
-CROSS   = mips-linux-gnu-
+CROSS   = arm-none-eabi-
 CPP     = cpp
 LD      = $(CROSS)ld
 OBJCOPY = $(CROSS)objcopy
